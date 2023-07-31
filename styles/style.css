@@ -1358,4 +1358,12 @@ input[type=range]:focus::-ms-fill-upper {
   .projectsComein {
     width: 100% !important;
   }
+}
+@media screen and (max-width: 448px) {
+  .projectsMain h1 {
+    font-size: 50px !important;
+  }
+  .projectsMain h2 {
+    font-size: xx-large;
+  }
 }/*# sourceMappingURL=style.css.map */
