@@ -701,6 +701,9 @@ header .mute:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   transition: 1s;
   display: none;
 }
@@ -708,14 +711,10 @@ header .mute:hover {
   background-image: url(../assets/images/Capture.PNG);
   color: rgb(241, 7, 54);
 }
-.projects .projectCard:nth-child(2) button {
-  transform: translateX(100px) translateY(125px) rotateZ(-30deg);
-}
 .projects .projectCard:nth-child(3) {
-  background-image: url(../assets/images/logo.png);
-  background-size: contain;
+  background-image: none;
   background-color: rgb(0, 0, 0);
-  color: gray;
+  color: white;
 }
 .projects .projectCard p {
   width: 400px;
@@ -724,7 +723,6 @@ header .mute:hover {
   width: 100px;
   height: 40px;
   font-size: large;
-  transform: translateX(100px) translateY(80px) rotateZ(-30deg);
   background: none;
   border: 2px solid aqua;
   color: white;
@@ -1343,4 +1341,21 @@ input[type=range]:focus::-ms-fill-upper {
 .headerBurger .soundsBtns {
   display: flex !important;
   flex-direction: column !important;
+}
+
+@media screen and (max-width: 603px) {
+  .projectCard {
+    width: 100% !important;
+    border-radius: 0 !important;
+    height: 350px !important;
+  }
+  .projectCard p {
+    width: 100% !important;
+  }
+  .projectCard button {
+    transform: rotateZ(0) !important;
+  }
+  .projectsComein {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

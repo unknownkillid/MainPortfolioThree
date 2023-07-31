@@ -487,7 +487,7 @@ function animate() {
 
 animate();
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+const ambientLight = new THREE.AmbientLight(0xffffff, 2);
 scene.add(ambientLight);
 
 document.querySelectorAll('.XBtn').forEach(buttons => {

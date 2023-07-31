@@ -104,7 +104,7 @@ let currentIndex = 0;
 function showCurrentCard() {
   projectCards.forEach((card, index) => {
     if (index === currentIndex) {
-      card.style.display = 'block'
+      card.style.display = 'flex'
       setTimeout(() => {
         card.style.transform = 'translateX(0)';
         card.style.opacity = '1';
